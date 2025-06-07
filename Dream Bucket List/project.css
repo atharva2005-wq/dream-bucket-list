@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.bucket-list {
+    list-style: none;
+    padding: 0;
+}
+
+.bucket-list li {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    margin-right: 15px;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+/* Label Styling */
+.bucket-list label {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 12px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+/* Icon Styling */
+.icon {
+    margin-right: 12px;
+    font-size: 1.4rem;
+}
+
+/* When checkbox is checked */
+input[type="checkbox"]:checked + label {
+    background-color: #d4edda;
+    color: #155724;
+    text-decoration: line-through;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .bucket-list li {
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input[type="checkbox"] {
+        margin-bottom: 10px;
+    }
+}
